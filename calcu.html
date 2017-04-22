@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <link rel = 'stylesheet' href="calcu.css">
+    <title>calculator</title>
+</head>
+<body>
+    <div class="div-bg">
+        <div class = "calculator">
+            <div class="div-show">
+                  <label id = 'ishow'></label>
+            </div>
+            <div class = 'div-clc'>
+                <input type="button" value='清屏' id = 'clc-btn' onclick="Clearbutton()" >
+            </div>
+
+             <div class = 'div-btn'>
+                <input type="button" value='7' onclick="SInput(this)" >
+                <input type="button" value='8' onclick="SInput(this)" >
+                <input type="button" value='9' onclick="SInput(this)">
+                <input type="button" value='×' onclick="SInput(this)"><br>
+
+                <input type="button" value='4' onclick="SInput(this)">
+                <input type="button" value='5' onclick="SInput(this)">
+                <input type="button" value='6' onclick="SInput(this)">
+                <input type="button" value='÷' onclick="SInput(this)"><br>
+
+                <input type="button" value='1' onclick="SInput(this)">
+                <input type="button" value='2' onclick="SInput(this)">
+                <input type="button" value='3' onclick="SInput(this)">
+                <input type="button" value='-' onclick="SInput(this)"><br>
+
+                <input type="button" value='0' onclick="SInput(this)">
+                <input type="button" value='(' onclick="SInput(this)">
+                <input type="button" value=')'onclick="SInput(this)">
+                <input type="button" value='+' onclick="SInput(this)"><br>
+                 <div class = 'div-equal'>
+                     <input type="button" value="=" id = "equal" onclick="Calculatoring()">
+                 </div>
+             </div>
+         </div>
+    </div>
+
+</body>
+    <script src="calculator.js" charset="GB2312"></script>
+</html>
